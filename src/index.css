@@ -1,0 +1,17 @@
+@import "mosaic/src/styles/tailwind.css";
+
+body:after {
+  /* Removes tailwind breakpoint inspector */
+  content: initial !important;
+}
+
+.leaflet-container {
+  height: 200px;
+  width: 100%;
+}
+
+@media (min-width: 1536px) {
+  .leaflet-container {
+    height: calc(100vh - 40px - 24px);
+  }
+}
